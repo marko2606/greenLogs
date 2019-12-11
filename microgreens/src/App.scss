@@ -1,0 +1,70 @@
+// main styles
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+$backgroundColor: #222831;
+$backgroundSecondaryColor: #393e46;
+
+$headerTextColor: #4C8E4C;
+$primaryTextColor: #d0d0d0;
+
+h1, h2, h3, h4 {
+  color: $headerTextColor
+}
+
+p, th {
+  color: $primaryTextColor;
+}
+
+label {
+  margin: 10px;
+  text-align: left;
+}
+
+.App {
+  text-align: center;
+  flex: 1;
+  height: 100%;
+  background-color: $backgroundColor;
+}
+
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: $backgroundSecondaryColor;
+}
+
+.header {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.addNew {
+  background-color: $primaryTextColor;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 80px;
+  left: 80px
+}
+
+.modal-btn {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  height: 30px;
+  width: 200px;
+  align-self: center;
+  color: $headerTextColor;
+  font-weight: bold;
+}
